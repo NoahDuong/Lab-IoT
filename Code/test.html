@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dương Gia Bảo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+   /*khung */
+    .banner-container {
+      position: relative;
+    }
+    /* Banner */
+    .banner {
+      height: 120px;
+      background: url('https://cdn.donmai.us/sample/8f/50/__hatsune_miku_vocaloid_drawn_by_konya_karasue__sample-8f50a8346664bfa901c97b201493d2bb.jpg') center/cover no-repeat;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .banner::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+    }
+    .avatar {
+      position: absolute;
+      bottom: -60px;
+      left: 30px;
+      width: 120px;
+      height: 120px;
+      border: 4px solid #1e1e1e;
+      border-radius: 50%;
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBihdSKtfsZSRygOBBkTpYJzSF8I7llaHV3g&s') center/cover no-repeat;
+      z-index: 2;
+    }
+    /* profile data*/
+    .profile-info {
+      margin-top: 80px; /* tránh colide với avatar*/
+      padding: 20px;
+      background: #2a2a2a;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .profile-info h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      margin-left: 160px;
+    }
+    .stats {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      margin-left: 160px;
+    }
+    .stat {
+      background: #3a3a3a;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 150px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .stat:hover {
+      transform: translateY(-5px);
+    }
+    .stat h3 {
+      font-size: 1.1rem;
+      color: #aaa;
+      margin-bottom: 5px;
+    }
+    .stat p {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    /* Chi tiết hồ sơ */
+    .details {
+      margin: 20px 0;
+      padding: 20px;
+      background: #2a2a2a;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .details h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+    .details p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #ccc;
+    }
+    .details a{
+        color: inherit;
+        text-decoration: none;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+    .details a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background: #ff66ab;
+        transition: width 0.3s ease;
+    }
+    .details a:hover{
+        transform: translateY(-2px);
+    }
+    .details a:hover::after{
+        width: 100%;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      margin: 20px 0;
+      color: #777;
+      font-size: 0.9rem;
+    }
+    /* động */
+    @media(max-width: 768px) {
+      .stats {
+        flex-direction: column;
+        margin-left: 0;
+      }
+      .avatar {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .profile-info {
+        text-align: center;
+        margin-top: 60px;
+      }
+      .profile-info h1, .stats {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="banner-container">
+      <div class="banner"></div>
+      <div class="avatar"></div>
+    </div>
+    <div class="profile-info">
+      <h1>Dương Gia Bảo</h1>
+      <div class="stats">
+        <div class="stat">
+          <h3>Player</h3>
+          <p>#1</p>
+        </div>
+        <div class="stat">
+          <h3>Age</h3>
+          <p>21</p>
+        </div>
+        <div class="stat">
+          <h3>Student number</h3>
+          <p>22119166</p>
+        </div>
+        <div class="stat">
+          <h3>College year</h3>
+          <p>3</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- info here -->
+    <div class="details">
+      <h2>About me</h2>
+      <p><strong>Date of birth:</strong> 07/02/2004</p>
+      <p><strong>Interesting in:</strong> Music, Games, Anime and Code</code></p>
+      <p><strong>Projects I have work:</strong> 
+        <a href="https://github.com/NoahDuong/IOT_DeviceUI" target="_blank"> device UI</a>,
+        <a href="https://github.com/NoahDuong/Verilog" target="_blank"> Program for STM32 using Verilog,...</a> </p>
+      <p><strong>Connect with me:</strong>
+        <a href="https://www.facebook.com/duonggiabao.7224/" target="_blank">Facebook</a>,
+        <a href="https://www.linkedin.com/in/noahduong/" target="_blank">LinkedIn </a>,
+        <a href="https://github.com/NoahDuong" target="_blank">GitHub</a>
+        </p>
+    </div>
+  </div>
+  
+  <footer>
+    © 2025 - Design by Noah, Inspiration of Osu!.
+  </footer>
+</body>
+</html>
