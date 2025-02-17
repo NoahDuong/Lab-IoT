@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đèn 06</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        
+        .container {
+            width: 300px;
+            background-color: #dff0d8;
+            border: 2px dashed red;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        .lightbulb img {
+            width: 100px;
+            height: auto;
+        }
+        .title {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+            .buttons button {
+            padding: 8px 15px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        .on {
+            background-color: lawngreen;
+            color: black;
+        }
+
+        .off {
+            background-color: lightgray;
+            color: black;
+        }
+
+        .buttons button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="lightbulb">
+        <img src="https://www.w3schools.com/html/pic_bulboff.gif" alt="Bóng đèn">
+    </div>
+    <p class="title">Đèn 06</p>
+    <div class="buttons">
+        <button class="on">ON</button>
+        <button class="off">OFF</button>
+    </div>
+</div>
+
+</body>
+</html>

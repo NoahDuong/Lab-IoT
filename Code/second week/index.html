@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Bài tập tuần 2</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Re. noahDuong">
+        <meta name="keywords" content="Java,CSS,HTML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="device">
+                <div class="header">
+                    <p class="status">On</p>
+                    <label class="switch">
+                        <input type="checkbox" checked onchange="toggleDevice(this)">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <img src="./tv.png" class="icon">
+                <p class="title">Smart TV</p>
+                <p class="description">LG 50” UN81 4K</p>
+                
+            </div>
+    
+            <div class="device">
+                <div class="header">
+                    <p class="status">On</p>
+                    <label class="switch">
+                        <input type="checkbox" checked onchange="toggleDevice(this)">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <img src="./router.png" class="icon">
+                <p class="title">Router</p>
+                <p class="description">TP-Link Archer C60 AC</p>
+            </div>
+    
+            <div class="device highlight">
+                <div class="header">
+                    <p class="status">Off</p>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleDevice(this)">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <img src="./air-conditioner.png" class="icon">
+                <p class="title">Air Conditioner</p>
+                <p class="description">Samsung AR35 A++</p>
+            </div>
+    
+            <div class="device highlight">
+                <div class="header">
+                    <p class="status">Off</p>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleDevice(this)">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <img src="./icons8-speaker-64.png" class="icon">
+                <p class="title">Speaker</p>
+                <p class="description">Samsung Q800T 3.1.2ch</p>
+            </div>
+    
+            <div class="device">
+                <div class="header">
+                    <p class="status">On</p>
+                    <label class="switch">
+                        <input type="checkbox" checked onchange="toggleDevice(this)">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <img src="./icons8-spotlight-50.png" class="icon">
+                <p class="title">Spotlights</p>
+                <p class="description">Phillips Hue</p>
+            </div>
+    
+            <div class="device highlight">
+                <div class="header">
+                    <p class="status">Off</p>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleDevice(this)">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <img src="./icons8-alarm-64.png" class="icon">
+                <p class="title">Alarm</p>
+                <p class="description">Frontpoint Home Alarm</p>
+            </div>
+        </div>
+    
+        <script>
+            function toggleDevice(element) {
+                let device = element.closest(".device");
+                let statusText = device.querySelector(".status");
+    
+                if (element.checked) {
+                    statusText.textContent = "On";
+                    device.classList.remove("highlight");
+                } else {
+                    statusText.textContent = "Off";
+                    device.classList.add("highlight");
+                }
+            }
+        </script>
+    </body>
+    </html>

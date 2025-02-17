@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,7 +52,7 @@
         }
         .hero {
             height: 100vh;
-            background: url('https://i.pinimg.com/1200x/50/e3/5c/50e35c94c65d6cdc059b5c6225f723fd.jpg') center/cover no-repeat;
+            background: url('https://files.dandautu.vn/images/administrative-maps/c-57-1673252716-7646.jpg') center/cover no-repeat;
             color: white;
             display: flex;
             justify-content: center;
@@ -63,10 +63,6 @@
         .hero h1 {
             font-size: 4rem;
             margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
         }
         .hero button {
             background-color: #007BFF;
@@ -95,6 +91,20 @@
             max-width: 800px;
             margin: 0 auto;
         }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+        .gallery img {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -103,27 +113,28 @@
             <h2>Noah Duong</h2>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Rooms</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Đặt phòng</a></li>
+            <li><a href="#">Liên hệ</a></li>
         </ul>
         <a class="cta" href="#">Đến đó</a>
     </div>
 
     <div class="hero">
         <h1>An Giang</h1>
-        <button>Khám phá</button>
+        <button onclick="window.location.href='blog.html'">Khám phá</button>
     </div>
 
     <section class="about">
         <h2>Thông tin thêm</h2>
-        <p>An Giang là một tỉnh thuộc vùng đồng bằng sông Cửu Long, Việt Nam.
+        <p>An Giang là một tỉnh thuộc vùng đồng bằng sông Cửu Long, Việt Nam.</p>
+    </section>
 
-            An Giang là tỉnh thuộc Vùng kinh tế trọng điểm vùng đồng bằng sông Cửu Long. Là tỉnh có dân số đông nhất vùng đồng bằng sông Cửu Long và là tỉnh đứng thứ 8 cả nước về dân số. Một phần của An Giang nằm trong vùng tứ giác Long Xuyên.
-            
-            An Giang sở hữu diện tích khá lớn ở miền Tây Nam Bộ, trong đó có nhiều cảnh quan thiên nhiên tươi đẹp, có sông nước mênh mông, có núi non kỳ vĩ, có rừng tràm, có đồng ruộng bát ngát,...</p>
+    <section class="gallery">
+        <h2>Một vài danh lam thắng cảnh</h2>
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/445714303.jpg?k=bcbb2a35fd129b33a7da93a52b347b274ace10f814f92d5dd7310311b406cf76&o=&hp=1" alt="Núi Sam">
+        <img src="https://thamhiemmekong.com/wp-content/uploads/2019/09/nui-cam-5.jpg" alt="Núi Cấm">
+        <img src="https://i2.ex-cdn.com/crystalbay.com/files/content/2024/11/05/du-lich-an-giang-rung-tram-tra-su-mua-nuoc-noi-1-1004.jpg" alt="Rừng Tràm trà sư">
     </section>
 </body>
 </html>

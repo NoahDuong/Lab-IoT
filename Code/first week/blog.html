@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá An Giang</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background: whitesmoke;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .landmark {
+            position: relative;
+            margin: 20px 0;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .landmark img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .landmark:hover img {
+            transform: scale(1.1);
+        }
+        .landmark .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            font-size: 1.2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .landmark:hover .description {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Danh Lam Thắng Cảnh An Giang</h1>
+        
+        <div class="landmark">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/445714303.jpg?k=bcbb2a35fd129b33a7da93a52b347b274ace10f814f92d5dd7310311b406cf76&o=&hp=1" alt="Núi Sam">
+            <div class="description">Núi Sam - Một điểm đến tâm linh nổi tiếng với chùa Bà Chúa Xứ.</div>
+        </div>
+        
+        <div class="landmark">
+            <img src="https://thamhiemmekong.com/wp-content/uploads/2019/09/nui-cam-5.jpg" alt="Núi Cấm">
+            <div class="description">Núi Cấm - Đỉnh núi cao nhất miền Tây Nam Bộ, khí hậu mát mẻ quanh năm.</div>
+        </div>
+        
+        <div class="landmark">
+            <img src="https://i2.ex-cdn.com/crystalbay.com/files/content/2024/11/05/du-lich-an-giang-rung-tram-tra-su-mua-nuoc-noi-1-1004.jpg" alt="Rừng Tràm Trà Sư">
+            <div class="description">Rừng Tràm Trà Sư - Hệ sinh thái ngập nước với phong cảnh tuyệt đẹp.</div>
+        </div>
+    </div>
+</body>
+</html>
