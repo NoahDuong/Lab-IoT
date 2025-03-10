@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Bai tap bong den</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylebongden.css">
+        <script src="./control.js" defer></script>
+    </head>
+    <body>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+        <div class="app-container">
+            <div class="header">
+                <h3>IoTs</h3>
+                <p>Nhiệt độ: <span id="temperature">--</span>°C</p>
+                <p>Độ ẩm: <span id="humidity">--</span>%</p>
+            </div>
+            <div class="devices">
+                <div class="device-card">
+                    <img src="./lightoff.png" id="bulb1" alt="Light Bulb">
+                    <div class="device-name">Đèn 1</div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleLight('bulb1', this.checked)">
+                        <span class="slider"></span>
+                    </div>
+                <div class="device-card">
+                    <img src="./lightoff.png" id="bulb2" alt="Light Bulb">
+                    <div class="device-name">Đèn 2</div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleLight('bulb2', this.checked)">
+                        <span class="slider"></span>
+                    </div>
+                <div class="device-card">
+                    <img src="./lightoff.png" id="bulb3" alt="Light Bulb">
+                    <div class="device-name">Đèn 3</div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleLight('bulb3', this.checked)">
+                        <span class="slider"></span>
+                    </div>
+                <div class="device-card">
+                    <img src="./lightoff.png" id="bulb4" alt="Light Bulb">
+                    <div class="device-name">Đèn 4</div>
+                    <label class="switch">
+                        <input type="checkbox" onchange="toggleLight('bulb4', this.checked)">
+                        <span class="slider"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

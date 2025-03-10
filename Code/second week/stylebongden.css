@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.app-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: rgb(224, 201, 201);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    height: 100px;
+    background-color: rgb(224, 201, 172);
+}
+.header p {
+    font-size: 19px;
+}
+.header p span {
+    color: red;
+}
+.devices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.device-card {
+    background: #f1f4f8cc;
+    padding: 20px;
+    text-align: center;
+    border: 0.5px dashed red;
+}
+.device-card img {
+    width: 100px;
+    height: auto;
+}
+.device-name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.button-container {
+    margin-top: 10px;
+}
+.button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+.button-on {
+    background-color: green;
+    color: white;
+}
+.button-off {
+    background-color: red;
+    color: white;
+}

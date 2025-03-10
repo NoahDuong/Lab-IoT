@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="vi">
     <head>
-        <title>Bài tập tuần 2</title>
+        <title>Room UI</title>
         <meta charset="UTF-8">
         <meta name="description" content="Re. noahDuong">
         <meta name="keywords" content="Java,CSS,HTML">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
+        <script src="./smarthomecontrol.js" defer></script>
     </head>
     <body>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
         <div>
         <button class="redirect-button" onclick="window.location.href='./smarthome.html'">
+        <p class="title"><</p>
         </div>
         <div class="container">
-            <div class="device">
+            <div class="device" data-device-id="tv">
                 <div class="header">
                     <p class="status">On</p>
                     <label class="switch">
@@ -24,10 +28,8 @@
                 <img src="./tv.png" class="icon">
                 <p class="title">Smart TV</p>
                 <p class="description">LG 50” UN81 4K</p>
-                
             </div>
-    
-            <div class="device">
+            <div class="device" data-device-id="router">
                 <div class="header">
                     <p class="status">On</p>
                     <label class="switch">
@@ -39,8 +41,7 @@
                 <p class="title">Router</p>
                 <p class="description">TP-Link Archer C60 AC</p>
             </div>
-    
-            <div class="device highlight">
+            <div class="device highlight" data-device-id="air-conditioner">
                 <div class="header">
                     <p class="status">Off</p>
                     <label class="switch">
@@ -52,8 +53,7 @@
                 <p class="title">Air Conditioner</p>
                 <p class="description">Samsung AR35 A++</p>
             </div>
-    
-            <div class="device highlight">
+            <div class="device highlight" data-device-id="Speaker">
                 <div class="header">
                     <p class="status">Off</p>
                     <label class="switch">
@@ -65,8 +65,7 @@
                 <p class="title">Speaker</p>
                 <p class="description">Samsung Q800T 3.1.2ch</p>
             </div>
-    
-            <div class="device">
+            <div class="device" data-device-id="Spotlights">
                 <div class="header">
                     <p class="status">On</p>
                     <label class="switch">
@@ -78,8 +77,7 @@
                 <p class="title">Spotlights</p>
                 <p class="description">Phillips Hue</p>
             </div>
-    
-            <div class="device highlight">
+            <div class="device highlight" data-device-id="Alarm">
                 <div class="header">
                     <p class="status">Off</p>
                     <label class="switch">
@@ -92,20 +90,5 @@
                 <p class="description">Frontpoint Home Alarm</p>
             </div>
         </div>
-    
-        <script>
-            function toggleDevice(element) {
-                let device = element.closest(".device");
-                let statusText = device.querySelector(".status");
-    
-                if (element.checked) {
-                    statusText.textContent = "On";
-                    device.classList.remove("highlight");
-                } else {
-                    statusText.textContent = "Off";
-                    device.classList.add("highlight");
-                }
-            }
-        </script>
     </body>
     </html>

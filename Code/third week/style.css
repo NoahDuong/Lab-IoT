@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaeaea;
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,21 +19,21 @@ body {
     max-width: 500px;
 }
 
-.redirect-button{
+.redirect-button {
     position: absolute;
     top: 10px;
     left: 10px;
-    padding: 10px 50px;
-    background-color: #4caf50;
+    padding: 20px 20px;
+    background-color: #8a4bd1;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: auto;
 }
 
-.redirect-button:hover{
-    background-color: #45a049;
+.redirect-button:hover {
+    background-color: #1e241e;
 }
 
 .device {
@@ -138,12 +138,12 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .room img {
@@ -178,9 +178,9 @@ input:checked + .slider:before {
 
 .taskbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: #e1d8d8;
+    background-color: #4CAF50;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
@@ -194,10 +194,10 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-    margin: 0 20px;
+    color: #ffffff;
+    margin: 0 15px;
     text-decoration: none;
-    transition: transform 0.2s, color 0.2s;
+    transition: transform 0.3s, color 0.3s;
 }
 
 .taskbar-item:hover {
